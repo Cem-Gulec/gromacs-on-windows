@@ -1,0 +1,7 @@
+gcc-core
+make
+openssl
+ssh
+ftp
+python
+libfftw3
