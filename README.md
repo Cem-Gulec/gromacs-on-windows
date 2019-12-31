@@ -18,14 +18,17 @@ How to Build
 2. Press "Configure" and just select the version of visual studio you own in your pc.
 
 3. Configuring might take a while but after it finishes you'll come up with some specified errors. At this step, from the "GMX" section, you need to find "GMX_FFT_LIBRARY". Change its value from "fftw3" to "fftpack". Then configure again.
+![](images/Screenshot_1.jpg)
 
 4. After configuration is done, one last thing to do: From the "CMAKE" section, change "CMAKE_INSTALL_PREFIX"'s value to a new directory name such that: ( Gromacs/gromacs_2018.8_verbuilded ). Then configure again.
+![](images/Screenshot_2.jpg)
 
 5. After configuration is done, you should be able to "Generate" files without any errors. Press "Generate" button.
 
 6. If you have come to this step without any error, you at "/Gromacs/gromacs-2018.8/build" there is a file named "Gromacs.sln". In order to open it you require Microsoft Visual Studio.
 
 7. This step probably the longest one takes to compile, so be patient. After opening the "Gromacs.sln" via MVS, as in the image compile "gmx".
+![](images/Screenshot_3.jpg)
 
 8. After you compiling "gmx", you may come up with an error "'\_BitScanReverse64': identifier not found". You may be able to solve it just by changing "\_BitScanReverse64" into "\_BitScanReverse" from the specified error location code line. Or "intrin.h" library- which contains the "\_BitScanReverse" function may not be existing.
 
