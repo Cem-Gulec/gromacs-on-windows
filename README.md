@@ -7,13 +7,11 @@ Requirements: Microsoft Visual Studio, Cmake, an unpacking tool, Cygwin
 Unpacking Tar File
 =====================
 There are plenty of softwares such as tar, 7-zip, TarTools. But for me 7-zip was the easiest one to use.
-You can find detailed information from here: https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows
+You can find the [detailed information](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
 
 How to Build
 =====================
-First of all in order to 
-This project uses [CMake](http://www.cmake.org) for its build system.  To build it, follow these
-steps:
+[CMake](http://www.cmake.org) for building the system. To build it, follow these steps:
 
 1. For the section "Where is the source code": specify your unpacked gromacs file (example: /Gromacs/gromacs-2018.8). And for the section "Where to build the binaries": you can create a new directory such as Gromacs/gromacs-2018.8/build
 
